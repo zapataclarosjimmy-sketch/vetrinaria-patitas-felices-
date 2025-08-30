@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veterinaria Patitas Felices</title>
+  <meta name="theme-color" content="#111827" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <header>
+    <h1>Veterinaria Patitas Felices</h1>
+
+    <nav class="menu">
+      <button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
+      <ul class="menu-list" id="menuList">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Galería</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="bienvenida">
+    <h2>Bienvenidos a Veterinaria Patitas Felices</h2>
+    <p>Cuidamos a tus mascotas con amor y profesionalismo.</p>
+  </section>
+
+  <section id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="servicios-grid">
+      <div class="card">
+        <h3>Consulta</h3>
+        <p>Atención médica profesional.</p>
+      </div>
+      <div class="card">
+        <h3>Peluquería</h3>
+        <p>Cuidado estético para tus mascotas.</p>
+      </div>
+      <div class="card">
+        <h3>Vacunación</h3>
+        <p>Protección contra enfermedades.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Blog</h2>
+
+    <article class="entrada-blog">
+      <img src="animales/pana rabith 2.jpg" alt="Mascota 1">
+      <div>
+        <h3>Consejo de salud</h3>
+        <p>Cómo mantener a tu mascota feliz y saludable.</p>
+      </div>
+    </article>
+
+    <article class="entrada-blog">
+      <img src="animales/firulays.jpg" alt="Mascota 2">
+      <div>
+        <h3>Nutrición adecuada</h3>
+        <p>La importancia de una dieta balanceada para mascotas.</p>
+      </div>
+    </article>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería</h2>
+    <div class="galeria-grid">
+      <img src="animales/pollito pio.jpg" alt="Mascota A">
+      <img src="animales/vaquita.jpg" alt="Mascota B">
+      <img src="animales/pana rabith.jpg" alt="Mascota C">
+      <img src="animales/ovejita bebe.jpg" alt="Mascota D">
+      <img src="animales/cerdito.jpg" alt="Mascota E">
+      <img src="animales/barroso.jpg" alt="Mascota F">
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <p>© 2025 Veterinaria Patitas Felices.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menuList");
+      menu.classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
